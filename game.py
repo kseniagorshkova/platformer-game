@@ -1,7 +1,10 @@
 import pygame
 from objects import*
+from levels import*
 
 pygame.init()
+
+level1_objects = draw_level(level1)
 
 game = True
 while game:
@@ -11,6 +14,8 @@ while game:
             game = False
             
     window.blit(bg,(0,0))
+    level1_objects.draw(window)
+    
     pygame.display.update()
     clock.tick(FPS)
 

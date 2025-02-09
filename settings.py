@@ -12,3 +12,4 @@ pygame.display.set_icon(pygame.image.load('assets/images/player/stand_1.png'))
 clock = pygame.time.Clock()
 
 bg = pygame.transform.scale(pygame.image.load("assets/backgrounds/level1.png"), (W,H))
+platform_image = pygame.image.load("assets/backgrounds/platform.png")
